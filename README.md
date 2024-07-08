@@ -27,4 +27,4 @@ Thank You.
 
 ### Sorry for the mistake I did. Basically i was redeeming tokens by selling the Items rather buying items by selling the tokens.
 
-Here I am also providing the Old loom link for rest of the part of the code as loom restricted the video timeline to 5 Minutes only : (old loom video){https://www.loom.com/share/b24c81f00cd043a8993009c49a68db61?sid=37041229-6b81-4f2b-8995-a36d7e53bec1}
+Here I am also providing the Old loom link for rest of the part of the code as loom restricted the video timeline to 5 Minutes only : [old loom video]{https://www.loom.com/share/b24c81f00cd043a8993009c49a68db61?sid=37041229-6b81-4f2b-8995-a36d7e53bec1}
