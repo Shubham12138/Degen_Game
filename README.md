@@ -21,3 +21,8 @@ Lastly, I want to mention that I am unable to transact entire functioning using 
 Also, I request the mentors to review my Module 3 work, Its been pending for a week now.
 
 Thank You.
+
+
+## Mistake Solved :
+
+### Sorry for the mistake I did. Basically i was redeeming tokens by selling the Items rather buying items by selling the tokens.
