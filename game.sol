@@ -68,14 +68,14 @@ contract degenGames is ERC20("Degen", "DGN"), Ownable(msg.sender) {
         return "There are total 5 Items in the store which are :- Reyna (20000, Not Redeemable) , Sage (10000, Redeemable) ,Omen (5000, Redeemable) ,Skye (40000, Redeemable) ,Chamber (1000, Not Redeemable) . Price for one token is 40,000 and only one item can be used at a time for redeemal ";
     }
 
-    //final function to redeem the tokens on the basis of Items
+    //final function to redeem the Items on the basis of Tokens
     function redeemer(uint256 redItemNum, uint256 tokenNum) public onlyOwner returns (string memory) {
         require(keccak256(abi.encodePacked(TokenMark[redItemNum].redeemable))==keccak256(abi.encodePacked("Yes")) , "This is not exchangable");
-        require(TokenMark[redItemNum].tokenPoints * holderCount[msg.sender][redItemNum] >= 40000*tokenNum , "Insufficient points X ");
+        require(balanceOf(msg.sender)>=tokenNum , "Insufficient tokens X ");
 
-        holderCount[msg.sender][redItemNum] -= ((40000*tokenNum)/TokenMark[redItemNum].tokenPoints);
-        _mint(msg.sender, tokenNum);
-        return "Token redeemed Successfully !!";
+        holderCount[msg.sender][redItemNum] += ((40000*tokenNum)/TokenMark[redItemNum].tokenPoints);
+        _burn(msg.sender, tokenNum);
+        return "Items redeemed Successfully !!";
     }
 
     //function to show details of every item
